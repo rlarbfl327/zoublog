@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody:400');
+
+/*전체관리영역*/
+*{font-family: ;font-size: ;}/*루트-*/
+html{box-sizing: ;margin: ;padding: ;}/*-영역*/
+
+
+/*ROOT*/
+:root {
+    /*bgcolor*/
+    --bg-color1:#7D4941;
+    --bg-color2:#FBF3E8;
+    --bg-color3:#F06226;
+    --bg-color4:#91C777;
+    --bg-color5:#866738;
+    /*color*/
+    --font-color1: #303030;
+}
+
+/*전체-배경*/
+body{
+    background-image: url(./images/bg.png);
+    font-family: 'Hi Melody', 맑은 고딕, arial;
+    font-size: 1.8rem;
+    color: var(--font-color1);
+}
+
+/*머릿단*/
+header{
+    width: 100%;
+    margin: 1rem auto 2.5rem auto;
+    /*
+    margin: 0; - 상하좌우 전부 0값
+    margin: 0 auto; - 상하는0, 좌우는 auto
+    margin: 0 auto 40px; -*상 좌우 하
+    margin: 0 auto 20px 40px; - 상 0 우 0 하 20px 왼 40px
+    */
+}
+header{
+    text-align: center;
+    padding: 1rem auto;
+}
+/*img, span, input : 인라인 속성 -> 줄바꿈이 일어나지 않는 속성*/
+/*h1~h6, p, div, article...: 블록속성 -> 줄바꿈이 일어남*/
+/*h1~h6, p : 텍스트속성 -> 전용 정렬모드가 따로 존재*/
+/*블록 : 상, 하값 모두 가짐, 인라인 : 상, 하값을 못 가짐*/
+/*블록 > 인라인*/
+
+header h1 .logo{
+    padding: 2rem;
+}
+
+header .gnb ul{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--bg-color1);
+    border-bottom: 1px solid var(--bg-color1);
+    padding: 1rem 0 1rem;
+    background-color: rgba(255, 211, 183, .4);
+}
+
+header li{
+    margin: 0 1.5rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--bg-color5);
+}
+
+header li a:hover{
+
+}
+
+
+/*바닥단*/
+footer{
+    background-color: var(--bg-color1); /*void-공허 function-함수(박스) var-변수*/
+    color: var(--bg-color2);
+    text-align: center;
+    padding: .9rem .5rem 1.5rem;
+}
